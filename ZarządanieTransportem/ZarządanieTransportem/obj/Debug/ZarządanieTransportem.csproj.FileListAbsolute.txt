@@ -1,0 +1,15 @@
+c:\users\dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\bin\Debug\ZarządanieTransportem.exe.config
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\bin\Debug\ZarządanieTransportem.exe
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\bin\Debug\ZarządanieTransportem.pdb
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem.csprojResolveAssemblyReference.cache
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\MainWindow.baml
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\MainWindow.g.cs
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\App.g.cs
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem_MarkupCompile.cache
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem.g.resources
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem.Properties.Resources.resources
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem.csproj.GenerateResource.Cache
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem.exe
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem.pdb
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\Logowanie.baml
+C:\Users\Dawid\documents\visual studio 2013\Projects\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\Logowanie.g.cs
