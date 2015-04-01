@@ -17,10 +17,10 @@ namespace ZarządanieTransportem
     /// <summary>
     /// Interaction logic for Logowanie.xaml
     /// </summary>
-    public partial class Logowanie : Window
+    public partial class LoginWindow : Window
     {
         MainWindow form1;
-        public Logowanie(MainWindow form1)
+        public LoginWindow(MainWindow form1)
         {
             this.form1 = form1;
             InitializeComponent();
@@ -31,7 +31,7 @@ namespace ZarządanieTransportem
             if(LoginText.Text=="test" && HasloText.Text=="test")
             {
                 this.form1.login = "test";
-                this.form1.haslo = "test";
+                this.form1.password = "test";
                 this.Close();
             }
         }

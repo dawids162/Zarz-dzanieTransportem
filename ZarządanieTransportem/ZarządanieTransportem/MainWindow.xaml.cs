@@ -21,22 +21,22 @@ namespace ZarządanieTransportem
     public partial class MainWindow : Window
     {
 
-        public string login, haslo;
+        public string login, password;
         public MainWindow()
         {
             InitializeComponent();
-            Logowanie Logowanie1 = new Logowanie(this);
+            LoginWindow LoginWindow1 = new LoginWindow(this);
            // Logowanie1.Owner = this;
-            Logowanie1.ShowDialog();
+            LoginWindow1.ShowDialog();
            if(login=="test" && login == "test")
            {
                Mapa.Navigate("https://mapa.targeo.pl");
-               odblokujWszystko();
+               unlock();
            }
             
             
         }
-        private void odblokujWszystko()
+        private void unlock()
         {
             TreePracownicy.IsEnabled = true;
             TreeSrodkitrwale.IsEnabled = true;

@@ -1,4 +1,4 @@
-﻿<Window x:Class="ZarządanieTransportem.Logowanie"
+﻿<Window x:Class="ZarządanieTransportem.LoginWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Logowanie" Height="160.151" Width="297.745" Background="#FFC9D6F7">
