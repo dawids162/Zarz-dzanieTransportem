@@ -25,6 +25,7 @@ namespace ZarządanieTransportem
         public MainWindow()
         {
             InitializeComponent();
+            ConnectDataBase.Connect();
             LoginWindow LoginWindow1 = new LoginWindow(this);
            // Logowanie1.Owner = this;
             LoginWindow1.ShowDialog();

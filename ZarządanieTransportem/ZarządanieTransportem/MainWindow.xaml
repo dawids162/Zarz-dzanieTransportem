@@ -46,7 +46,7 @@
         <Grid HorizontalAlignment="Stretch" Height="Auto" Margin="140,77,0,0" VerticalAlignment="Stretch" Width="Auto">
             <WebBrowser x:Name="Mapa" HorizontalAlignment="Stretch" Height="Auto" VerticalAlignment="Stretch" Width="Auto" Margin="0,0,0,0" IsEnabled="False"/>
         </Grid>
-        <Grid x:Name="GridStatus" HorizontalAlignment="Stretch" Height="77" Margin="137,0,0,0" VerticalAlignment="Top" Width="Auto" Background="#FFC4C5DC" IsEnabled="False"/>
+        <Grid x:Name="GridStatus" HorizontalAlignment="Stretch" Height="77" Margin="140,0,0,0" VerticalAlignment="Top" Width="Auto" Background="#FFC4C5DC" IsEnabled="False"/>
 
     </Grid>
 </Window>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace ZarządanieTransportem
 {
@@ -28,11 +30,18 @@ namespace ZarządanieTransportem
 
         private void ButtonLogowanie_Click(object sender, RoutedEventArgs e)
         {
-            if(LoginText.Text=="test" && HasloText.Text=="test")
+            infoBox.Text = "";
+            DataTable table = ConnectDataBase.Commend("SELECT * FROM Customers WHERE Login=='"+LoginText.Text+"' AND Password=='"+HasloText.Text+"'");
+            
+            if(table.Rows.Count > 0)
             {
                 this.form1.login = "test";
                 this.form1.password = "test";
                 this.Close();
+            }
+            else
+            {
+                infoBox.Text = "NIEPOPRAWNE DANE";
             }
         }
     }
