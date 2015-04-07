@@ -10,18 +10,19 @@ namespace ZarządanieTransportem
 {
     static class ConnectDataBase
     {
-        static private SQLiteDataAdapter m_oDataAdapter = null;
-        static private DataSet m_oDataSet = null;
-        static private DataTable m_oDataTable = null;
-        static SQLiteConnection oSQLiteConnection;
+        static public SQLiteDataAdapter m_oDataAdapter = null;
+        static public DataSet m_oDataSet = null;
+        static public DataTable m_oDataTable = null;
+        static public SQLiteConnection oSQLiteConnection;
         static public void Connect()
         {
-            oSQLiteConnection = new SQLiteConnection(@"Data Source=bazaDanych.s3db");
+            oSQLiteConnection = new SQLiteConnection(@"Data Source=C:\Users\Dawid\Desktop\bazaDanych.s3db");
         }
         static public DataTable Commend(string commend)
         {
             m_oDataSet = null;
             m_oDataTable = null;
+            m_oDataAdapter = null;
             SQLiteCommand oCommand = oSQLiteConnection.CreateCommand();
             oCommand.CommandText = commend;
             m_oDataAdapter = new SQLiteDataAdapter(oCommand.CommandText, oSQLiteConnection);

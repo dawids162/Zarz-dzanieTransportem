@@ -35,14 +35,20 @@ namespace ZarządanieTransportem
             
             if(table.Rows.Count > 0)
             {
-                this.form1.login = "test";
-                this.form1.password = "test";
+                this.form1.login = LoginText.Text;
+                this.form1.permissions = table.Rows[0]["Permissions"].ToString();
+                //infoBox.Text = table.Rows[0]["Permissions"].ToString();
                 this.Close();
             }
             else
             {
                 infoBox.Text = "NIEPOPRAWNE DANE";
             }
+        }
+
+        private void _1(object sender, TextCompositionEventArgs e)
+        {
+            LoginText.Clear();
         }
     }
 }

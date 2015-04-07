@@ -28,7 +28,5 @@ C:\Users\Dawid\Documents\GitHub\ZarzadzanieTransportem\ZarządanieTransportem\Za
 C:\Users\Dawid\Documents\GitHub\ZarzadzanieTransportem\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem.g.resources
 C:\Users\Dawid\Documents\GitHub\ZarzadzanieTransportem\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem.Properties.Resources.resources
 C:\Users\Dawid\Documents\GitHub\ZarzadzanieTransportem\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem.csproj.GenerateResource.Cache
-C:\Users\Dawid\Documents\GitHub\ZarzadzanieTransportem\ZarządanieTransportem\ZarządanieTransportem\bin\Debug\bazaDanych.s3db
 C:\Users\Dawid\Documents\GitHub\ZarzadzanieTransportem\ZarządanieTransportem\ZarządanieTransportem\bin\Debug\System.Data.SQLite.dll
 C:\Users\Dawid\Documents\GitHub\ZarzadzanieTransportem\ZarządanieTransportem\ZarządanieTransportem\bin\Debug\System.Data.SQLite.xml
-C:\Users\Dawid\Documents\GitHub\ZarzadzanieTransportem\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem_Content.g.cs
