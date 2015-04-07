@@ -6,7 +6,7 @@
         <Grid x:Name="Menu"  HorizontalAlignment="Left" Height="Auto"  Margin="-3,0,0,0" VerticalAlignment="Stretch" Width="140" Background="#FFC9D6F7">
             <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="MENU" VerticalAlignment="Top" Width="120" Height="22" FontSize="16" FontWeight="Bold" TextAlignment="Center"/>
             <TreeView HorizontalAlignment="Stretch" Height="Auto" Margin="10,40,10,10" VerticalAlignment="Stretch" Width="Auto" Background="#e0ffff">
-                <TreeViewItem x:Name="TreeMapa" Header="Mapa" PreviewMouseDoubleClick="Click_TreeMap"/>
+                <TreeViewItem x:Name="TreeMapa" Header="Mapa" PreviewMouseDoubleClick="Click_TreeMap" IsEnabled="False"/>
                 <TreeViewItem x:Name="TreePracownicy" Header="Pracownicy" Width="114" IsEnabled="False">
                     <TreeViewItem x:Name="TreeKierowcy" Header="Kierowcy" HorizontalAlignment="Left" Width="92"/>
                     <TreeViewItem x:Name="TreeMechanicy" Header="Mechanicy" HorizontalAlignment="Left" Width="92"/>
@@ -42,20 +42,20 @@
                     </TreeViewItem>
                 </TreeViewItem>
                 <TreeViewItem x:Name="TreePaliwo" Header="Paliwo" IsEnabled="False"/>
-                <TreeViewItem x:Name="TreeAdmin" Header="Admin" PreviewMouseDoubleClick="Click_TreeAdmin"/>
+                <TreeViewItem x:Name="TreeAdmin" Header="Admin" PreviewMouseDoubleClick="Click_TreeAdmin" IsEnabled="False"/>
             </TreeView>
         </Grid>
         <Grid HorizontalAlignment="Stretch" Height="Auto" Margin="140,77,0,0" VerticalAlignment="Stretch" Width="Auto">
             <WebBrowser x:Name="Mapa" HorizontalAlignment="Stretch" Height="Auto" VerticalAlignment="Stretch" Width="Auto" Margin="0,0,0,0" IsEnabled="False"/>
         </Grid>
         <Grid x:Name="GridStatus" HorizontalAlignment="Stretch" Height="77" Margin="140,0,0,0" VerticalAlignment="Top" Width="Auto" Background="#FFC4C5DC" IsEnabled="False"/>
-        <Grid x:Name="GridAdmin" HorizontalAlignment="Stretch" Height="77" Margin="140,0,0,0" VerticalAlignment="Top" Width="Auto" Background="#FFC4C5DC" Visibility="Visible">
+        <Grid x:Name="GridAdmin" HorizontalAlignment="Stretch" Height="77" Margin="140,0,0,0" VerticalAlignment="Top" Width="Auto" Background="#FFC4C5DC" Visibility="Hidden">
             <Button x:Name="AddUser_GridAdmin_button" Content="Dodaj użytkownika" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" Width="124" Click="AddUser_GridAdmin_button_Click"/>
         </Grid>
         <Grid x:Name="GridAdmin_AddUser" HorizontalAlignment="Stretch" Height="Auto" Margin="140,77,0,0" VerticalAlignment="Stretch" Width="Auto" Background="#FFC4C5DC">
             <TextBox x:Name="Textboc_AddUsersGrid_login" HorizontalAlignment="Left" Height="22" Margin="54,66,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="120"/>
             <TextBlock HorizontalAlignment="Left" Margin="151,10,0,0" TextWrapping="Wrap" Text="NOWY UŻYTKOWNIK" VerticalAlignment="Top" Height="34" Width="548" FontSize="24" TextAlignment="Center"/>
-            <TextBox x:Name="Textboc_AddUsersGrid_password" HorizontalAlignment="Left" Height="24" Margin="213,66,0,0" TextWrapping="Wrap" Text="Haslo" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="Textboc_AddUsersGrid_password" HorizontalAlignment="Left" Height="24" Margin="213,66,0,0" TextWrapping="Wrap" Text="Hasło" VerticalAlignment="Top" Width="120"/>
             <CheckBox x:Name="CheckBox_AddUser_Map" Content="Mapa" HorizontalAlignment="Left" Margin="151,154,0,0" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" Margin="151,111,0,0" TextWrapping="Wrap" Text="Uprawnienia" VerticalAlignment="Top" FontSize="16"/>
             <CheckBox x:Name="CheckBox_AddUser_Employees" Content="Pracownicy" HorizontalAlignment="Left" Margin="151,174,0,0" VerticalAlignment="Top"/>

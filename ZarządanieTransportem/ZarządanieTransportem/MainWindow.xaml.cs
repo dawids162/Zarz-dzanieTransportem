@@ -47,8 +47,9 @@ namespace ZarządanieTransportem
             {
                 if (permissions[0] == '1')
                 {
+
                     Mapa.Visibility = Visibility.Visible;
-                    Mapa.IsEnabled = true;
+                    TreeMapa.IsEnabled = true;
                 }
                 if (permissions[1] == '1')
                 {
@@ -72,12 +73,13 @@ namespace ZarządanieTransportem
                 }
                 if (permissions[6] == '1')
                 {
-                    Mapa.IsEnabled = true;
+                    TreeAdmin.IsEnabled = true;
+                    TreeAdmin.Visibility = Visibility.Visible;
                 }
                 if (permissions[7] == '1')
                 {
-                    TreeAdmin.IsEnabled = true;
-                    TreeAdmin.Visibility = Visibility.Visible;
+                   // TreeAdmin.IsEnabled = true;
+                    //TreeAdmin.Visibility = Visibility.Visible;
                 }
             }
             catch { }

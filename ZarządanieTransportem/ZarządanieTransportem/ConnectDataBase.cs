@@ -16,7 +16,7 @@ namespace ZarządanieTransportem
         static public SQLiteConnection oSQLiteConnection;
         static public void Connect()
         {
-            oSQLiteConnection = new SQLiteConnection(@"Data Source=..\..bazaDanych.s3db");
+            oSQLiteConnection = new SQLiteConnection(@"Data Source=E:\GitHub\ZarzadzanieTransportem\bazaDanych.s3db");
         }
         static public DataTable Commend(string commend)
         {
