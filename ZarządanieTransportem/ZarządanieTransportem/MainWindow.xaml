@@ -54,7 +54,7 @@
             <Button x:Name="button_GridAdmin_DeleteUser" Content="Usuń użytkownika" HorizontalAlignment="Left" Margin="186,10,0,0" VerticalAlignment="Top" Width="139" Click="button_GridAdmin_DeleteUser_Click"/>
             <TextBlock x:Name="Textblock_GridAdmin_Info" HorizontalAlignment="Left" Margin="683,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="118" FontSize="36"/>
         </Grid>
-        <Grid x:Name="GridAdmin_AddUser" HorizontalAlignment="Stretch" Height="Auto" Margin="140,77,0,0" VerticalAlignment="Stretch" Width="Auto" Background="#FFC4C5DC">
+        <Grid x:Name="GridAdmin_AddUser" HorizontalAlignment="Stretch" Height="Auto" Margin="140,77,0,0" VerticalAlignment="Stretch" Width="Auto" Background="#FFC4C5DC" Visibility="Hidden">
             <Grid x:Name="GridAddUser_GridAdminAddUser" HorizontalAlignment="Left" Height="345" Margin="30,10,0,0" VerticalAlignment="Top" Width="799" Visibility="Hidden">
                 <Button x:Name="button_AddUserGrid_SaveUser" Content="Zapisz" HorizontalAlignment="Left" Margin="138,248,0,0" VerticalAlignment="Top" Width="115" Height="23" Click="button_AddUserGrid_SaveUser_Click"/>
                 <CheckBox x:Name="CheckBox_AddUser_Map" Content="Mapa" HorizontalAlignment="Left" Margin="138,116,0,0" VerticalAlignment="Top"/>
@@ -68,10 +68,10 @@
                 <TextBox x:Name="Textboc_AddUsersGrid_password" HorizontalAlignment="Left" Height="24" Margin="251,45,0,0" TextWrapping="Wrap" Text="Hasło" VerticalAlignment="Top" Width="120"/>
                 <TextBlock HorizontalAlignment="Left" Margin="120,0,0,0" TextWrapping="Wrap" Text="NOWY UŻYTKOWNIK" VerticalAlignment="Top" Height="34" Width="548" FontSize="24" TextAlignment="Center"/>
             </Grid>
-            <Grid x:Name="GridDeleteUser_GridAdminUser" HorizontalAlignment="Left" Height="194" Margin="48,10,0,0" VerticalAlignment="Top" Width="781">
+            <Grid x:Name="GridDeleteUser_GridAdminUser" HorizontalAlignment="Left" Height="345" Margin="30,10,0,0" VerticalAlignment="Top" Width="799">
                 <ComboBox x:Name="ComboBox_GridAdminUser_ListCustomers" HorizontalAlignment="Left" Margin="22,54,0,0" VerticalAlignment="Top" Width="120"/>
                 <Button x:Name="button_GridAdminUser_DeleteUser" Content="USUŃ" HorizontalAlignment="Left" Margin="166,56,0,0" VerticalAlignment="Top" Width="120" Click="button_GridAdminUser_DeleteUser_Click"/>
-                <TextBlock HorizontalAlignment="Left" Margin="236,10,0,0" TextWrapping="Wrap" Text="USUŃ UŻYTKOWNIKA" VerticalAlignment="Top" Height="41" Width="365" FontSize="24"/>
+                <TextBlock HorizontalAlignment="Left" Margin="120,0,0,0" TextWrapping="Wrap" Text="USUŃ UŻYTKOWNIKA" VerticalAlignment="Top" Height="34" Width="548" FontSize="24" TextAlignment="Center"/>
             </Grid>
         </Grid>
 
