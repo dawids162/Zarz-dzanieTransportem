@@ -90,8 +90,12 @@ namespace ZarządanieTransportem
         /// </summary>
         private void hidden()
         {
+            //zwiazane z adminem
+            Textblock_GridAdmin_Info.Text = "";
             GridAdmin.Visibility = Visibility.Hidden;
             GridAdmin_AddUser.Visibility = Visibility.Hidden;
+            GridDeleteUser_GridAdminUser.Visibility = Visibility.Hidden;
+            //
             Mapa.Visibility = Visibility.Hidden;
         }
         private void Click_TreeAdmin(object sender, MouseButtonEventArgs e)
@@ -109,7 +113,12 @@ namespace ZarządanieTransportem
 
         private void AddUser_GridAdmin_button_Click(object sender, RoutedEventArgs e)
         {
+            Textblock_GridAdmin_Info.Text = "";
             GridAdmin_AddUser.Visibility = Visibility.Visible;
+            GridAddUser_GridAdminAddUser.Visibility = Visibility.Visible;
+            GridDeleteUser_GridAdminUser.Visibility = Visibility.Hidden;
+            Textboc_AddUsersGrid_login.Text = "login";
+            Textboc_AddUsersGrid_password.Text = "hasło";
         }
 
         private void button_AddUserGrid_SaveUser_Click(object sender, RoutedEventArgs e)
@@ -123,6 +132,9 @@ namespace ZarządanieTransportem
             ConnectDataBase.m_oDataTable.Rows.Add(oDataRow);
             ConnectDataBase.m_oDataAdapter.Update(ConnectDataBase.m_oDataSet);
             ConnectDataBase.oSQLiteConnection.Close();
+            Textblock_GridAdmin_Info.Text = "OK!";
+            GridAddUser_GridAdminAddUser.Visibility = Visibility.Hidden;
+            GridAdmin_AddUser.Visibility = Visibility.Hidden;
         }
         private string permissionsNewUser()
         {
@@ -140,6 +152,38 @@ namespace ZarządanieTransportem
             if (ChackBox_AddUser_Admin.IsChecked == true) permissionsUser += 1;
             else permissionsUser += 0;
             return permissionsUser;
+        }
+
+        private void button_GridAdmin_DeleteUser_Click(object sender, RoutedEventArgs e)
+        {
+            Textblock_GridAdmin_Info.Text = "";
+            ComboBox_GridAdminUser_ListCustomers.Items.Clear();
+            GridDeleteUser_GridAdminUser.Visibility = Visibility.Visible;
+            GridAddUser_GridAdminAddUser.Visibility = Visibility.Hidden;
+            Textblock_GridAdmin_Info.Text = "";
+            GridAdmin_AddUser.Visibility = Visibility.Visible;
+            ConnectDataBase.Connect();
+            ConnectDataBase.Commend("select * from Customers");
+            for (int i = 0; i < ConnectDataBase.m_oDataTable.Rows.Count; i++)
+            {
+                if (ConnectDataBase.m_oDataTable.Rows[i]["Login"].ToString() != "Admin")
+                    ComboBox_GridAdminUser_ListCustomers.Items.Add(ConnectDataBase.m_oDataTable.Rows[i]["Login"].ToString());
+            }
+            
+        }
+
+        private void button_GridAdminUser_DeleteUser_Click(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i < ConnectDataBase.m_oDataTable.Rows.Count; i++)
+            {
+                if (ConnectDataBase.m_oDataTable.Rows[i]["Login"].ToString() == ComboBox_GridAdminUser_ListCustomers.Text)
+                {
+                    ConnectDataBase.m_oDataTable.Rows[i].Delete();
+                }
+            }
+            ConnectDataBase.m_oDataAdapter.Update(ConnectDataBase.m_oDataSet);
+            Textblock_GridAdmin_Info.Text = "OK!";
+            GridDeleteUser_GridAdminUser.Visibility = Visibility.Hidden;
         }
     }
 }

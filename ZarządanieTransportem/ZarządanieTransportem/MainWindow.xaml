@@ -51,19 +51,28 @@
         <Grid x:Name="GridStatus" HorizontalAlignment="Stretch" Height="77" Margin="140,0,0,0" VerticalAlignment="Top" Width="Auto" Background="#FFC4C5DC" IsEnabled="False"/>
         <Grid x:Name="GridAdmin" HorizontalAlignment="Stretch" Height="77" Margin="140,0,0,0" VerticalAlignment="Top" Width="Auto" Background="#FFC4C5DC" Visibility="Hidden">
             <Button x:Name="AddUser_GridAdmin_button" Content="Dodaj użytkownika" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" Width="124" Click="AddUser_GridAdmin_button_Click"/>
+            <Button x:Name="button_GridAdmin_DeleteUser" Content="Usuń użytkownika" HorizontalAlignment="Left" Margin="186,10,0,0" VerticalAlignment="Top" Width="139" Click="button_GridAdmin_DeleteUser_Click"/>
+            <TextBlock x:Name="Textblock_GridAdmin_Info" HorizontalAlignment="Left" Margin="683,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="118" FontSize="36"/>
         </Grid>
         <Grid x:Name="GridAdmin_AddUser" HorizontalAlignment="Stretch" Height="Auto" Margin="140,77,0,0" VerticalAlignment="Stretch" Width="Auto" Background="#FFC4C5DC">
-            <TextBox x:Name="Textboc_AddUsersGrid_login" HorizontalAlignment="Left" Height="22" Margin="54,66,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="120"/>
-            <TextBlock HorizontalAlignment="Left" Margin="151,10,0,0" TextWrapping="Wrap" Text="NOWY UŻYTKOWNIK" VerticalAlignment="Top" Height="34" Width="548" FontSize="24" TextAlignment="Center"/>
-            <TextBox x:Name="Textboc_AddUsersGrid_password" HorizontalAlignment="Left" Height="24" Margin="213,66,0,0" TextWrapping="Wrap" Text="Hasło" VerticalAlignment="Top" Width="120"/>
-            <CheckBox x:Name="CheckBox_AddUser_Map" Content="Mapa" HorizontalAlignment="Left" Margin="151,154,0,0" VerticalAlignment="Top"/>
-            <TextBlock HorizontalAlignment="Left" Margin="151,111,0,0" TextWrapping="Wrap" Text="Uprawnienia" VerticalAlignment="Top" FontSize="16"/>
-            <CheckBox x:Name="CheckBox_AddUser_Employees" Content="Pracownicy" HorizontalAlignment="Left" Margin="151,174,0,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="CheckBox_AddUser_Equipment" Content="Środki trwałe" HorizontalAlignment="Left" Margin="151,194,0,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="CheckBox_AddUser_transport" Content="Usługi transportowe" HorizontalAlignment="Left" Margin="151,214,0,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="CheckBox_AddUser_Fuel" Content="Paliwo" HorizontalAlignment="Left" Margin="151,234,0,0" VerticalAlignment="Top"/>
-            <CheckBox x:Name="ChackBox_AddUser_Admin" Content="Administrator" HorizontalAlignment="Left" Margin="151,254,0,0" VerticalAlignment="Top"/>
-            <Button x:Name="button_AddUserGrid_SaveUser" Content="Zapisz" HorizontalAlignment="Left" Margin="136,289,0,0" VerticalAlignment="Top" Width="115" Height="23" Click="button_AddUserGrid_SaveUser_Click"/>
+            <Grid x:Name="GridAddUser_GridAdminAddUser" HorizontalAlignment="Left" Height="345" Margin="30,10,0,0" VerticalAlignment="Top" Width="799" Visibility="Hidden">
+                <Button x:Name="button_AddUserGrid_SaveUser" Content="Zapisz" HorizontalAlignment="Left" Margin="138,248,0,0" VerticalAlignment="Top" Width="115" Height="23" Click="button_AddUserGrid_SaveUser_Click"/>
+                <CheckBox x:Name="CheckBox_AddUser_Map" Content="Mapa" HorizontalAlignment="Left" Margin="138,116,0,0" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" Margin="150,90,0,0" TextWrapping="Wrap" Text="Uprawnienia" VerticalAlignment="Top" FontSize="16"/>
+                <CheckBox x:Name="CheckBox_AddUser_Employees" Content="Pracownicy" HorizontalAlignment="Left" Margin="138,136,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="CheckBox_AddUser_Equipment" Content="Środki trwałe" HorizontalAlignment="Left" Margin="138,156,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="CheckBox_AddUser_transport" Content="Usługi transportowe" HorizontalAlignment="Left" Margin="138,176,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="CheckBox_AddUser_Fuel" Content="Paliwo" HorizontalAlignment="Left" Margin="138,196,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="ChackBox_AddUser_Admin" Content="Administrator" HorizontalAlignment="Left" Margin="138,216,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="Textboc_AddUsersGrid_login" HorizontalAlignment="Left" Height="22" Margin="24,47,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="Textboc_AddUsersGrid_password" HorizontalAlignment="Left" Height="24" Margin="251,45,0,0" TextWrapping="Wrap" Text="Hasło" VerticalAlignment="Top" Width="120"/>
+                <TextBlock HorizontalAlignment="Left" Margin="120,0,0,0" TextWrapping="Wrap" Text="NOWY UŻYTKOWNIK" VerticalAlignment="Top" Height="34" Width="548" FontSize="24" TextAlignment="Center"/>
+            </Grid>
+            <Grid x:Name="GridDeleteUser_GridAdminUser" HorizontalAlignment="Left" Height="194" Margin="48,10,0,0" VerticalAlignment="Top" Width="781">
+                <ComboBox x:Name="ComboBox_GridAdminUser_ListCustomers" HorizontalAlignment="Left" Margin="22,54,0,0" VerticalAlignment="Top" Width="120"/>
+                <Button x:Name="button_GridAdminUser_DeleteUser" Content="USUŃ" HorizontalAlignment="Left" Margin="166,56,0,0" VerticalAlignment="Top" Width="120" Click="button_GridAdminUser_DeleteUser_Click"/>
+                <TextBlock HorizontalAlignment="Left" Margin="236,10,0,0" TextWrapping="Wrap" Text="USUŃ UŻYTKOWNIKA" VerticalAlignment="Top" Height="41" Width="365" FontSize="24"/>
+            </Grid>
         </Grid>
 
     </Grid>
