@@ -3,41 +3,41 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="586.537" Width="1001.507" WindowStartupLocation="CenterScreen" WindowState="Maximized" Background="#FFC9D6F7">
     <Grid>
-        <Grid x:Name="Menu"  HorizontalAlignment="Left" Height="Auto"  Margin="-3,0,0,0" VerticalAlignment="Stretch" Width="143" Background="#FFC9D6F7">
+        <Grid x:Name="Menu"  HorizontalAlignment="Left" Height="Auto"  Margin="-3,0,0,0" VerticalAlignment="Stretch" Width="210" Background="#FFC9D6F7">
             <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="MENU" VerticalAlignment="Top" Width="120" Height="22" FontSize="16" FontWeight="Bold" TextAlignment="Center"/>
             <TreeView HorizontalAlignment="Stretch" Height="Auto" Margin="10,40,10,10" VerticalAlignment="Stretch" Width="Auto" Background="#e0ffff">
                 <TreeViewItem x:Name="TreeMapa" Header="Mapa" PreviewMouseDoubleClick="Click_TreeMap" IsEnabled="False" PreviewMouseDown="Click_TreeMap"/>
-                <TreeViewItem x:Name="TreePracownicy" Header="Pracownicy" Width="114" IsEnabled="False">
-                    <TreeViewItem x:Name="TreeKierowcy" Header="Kierowcy" HorizontalAlignment="Left" Width="92"/>
-                    <TreeViewItem x:Name="TreeMechanicy" Header="Mechanicy" HorizontalAlignment="Left" Width="92"/>
-                    <TreeViewItem x:Name="TreeBiuro" Header="Biuro" HorizontalAlignment="Left" Width="92"/>
-                    <TreeViewItem x:Name="TreeBrygadzisci" Header="Brygadziści" HorizontalAlignment="Left" Width="92"/>
+                <TreeViewItem x:Name="TreePracownicy" Header="Pracownicy" IsEnabled="False">
+                    <TreeViewItem x:Name="TreeKierowcy" Header="Kierowcy" HorizontalAlignment="Left" Width="192"/>
+                    <TreeViewItem x:Name="TreeMechanicy" Header="Mechanicy" HorizontalAlignment="Left" Width="192"/>
+                    <TreeViewItem x:Name="TreeBiuro" Header="Biuro" HorizontalAlignment="Left" Width="192"/>
+                    <TreeViewItem x:Name="TreeBrygadzisci" Header="Brygadziści" HorizontalAlignment="Left" Width="192"/>
                 </TreeViewItem>
-                <TreeViewItem x:Name="TreeSrodkitrwale" Header="Środki trwałe" Width="114" IsEnabled="False">
-                    <TreeViewItem Header="Pojazdy" HorizontalAlignment="Left" Width="97">
-                        <TreeViewItem Header="Ciągniki" HorizontalAlignment="Left" Width="78"/>
-                        <TreeViewItem Header="Naczepy" HorizontalAlignment="Left" Width="78"/>
-                        <TreeViewItem Header="Solówki" HorizontalAlignment="Left" Width="78"/>
-                        <TreeViewItem Header="Przyczepy" HorizontalAlignment="Left" Width="78"/>
-                        <TreeViewItem Header="Busy" HorizontalAlignment="Left" Width="78"/>
-                        <TreeViewItem Header="Inne" HorizontalAlignment="Left" Width="78"/>
+                <TreeViewItem x:Name="TreeSrodkitrwale" Header="Środki trwałe" IsEnabled="False">
+                    <TreeViewItem Header="Pojazdy" HorizontalAlignment="Left" Width="197">
+                        <TreeViewItem Header="Ciągniki" HorizontalAlignment="Left" Width="178"/>
+                        <TreeViewItem Header="Naczepy" HorizontalAlignment="Left" Width="178"/>
+                        <TreeViewItem Header="Solówki" HorizontalAlignment="Left" Width="178"/>
+                        <TreeViewItem Header="Przyczepy" HorizontalAlignment="Left" Width="178"/>
+                        <TreeViewItem Header="Busy" HorizontalAlignment="Left" Width="178"/>
+                        <TreeViewItem Header="Inne" HorizontalAlignment="Left" Width="178"/>
                     </TreeViewItem>
-                    <TreeViewItem Header="Komputery" HorizontalAlignment="Left" Width="97"/>
-                    <TreeViewItem Header="Drukarki" HorizontalAlignment="Left" Width="97"/>
-                    <TreeViewItem Header="Sprzęt AGD" HorizontalAlignment="Left" Width="97"/>
-                    <TreeViewItem Header="Meble" HorizontalAlignment="Left" Width="97"/>
+                    <TreeViewItem Header="Komputery" HorizontalAlignment="Left" Width="197"/>
+                    <TreeViewItem Header="Drukarki" HorizontalAlignment="Left" Width="197"/>
+                    <TreeViewItem Header="Sprzęt AGD" HorizontalAlignment="Left" Width="197"/>
+                    <TreeViewItem Header="Meble" HorizontalAlignment="Left" Width="197"/>
                 </TreeViewItem>
-                <TreeViewItem x:Name="TreeUslugiTransportowe" Header="Usługi transportowe" Width="114" IsEnabled="False">
-                    <TreeViewItem Header="Klienci" HorizontalAlignment="Left" Width="108" IsExpanded="True">
-                        <TreeViewItem Header="Nazwa" HorizontalAlignment="Left" Width="89"/>
-                        <TreeViewItem Header="Adres" HorizontalAlignment="Left" Width="89"/>
-                        <TreeViewItem Header="NIP" HorizontalAlignment="Left" Width="89"/>
-                        <TreeViewItem Header="To nie wszysko!!!" HorizontalAlignment="Left" Width="89"/>
+                <TreeViewItem x:Name="TreeUslugiTransportowe" Header="Usługi transportowe" IsEnabled="False">
+                    <TreeViewItem Header="Klienci" HorizontalAlignment="Left" Width="198" IsExpanded="True">
+                        <TreeViewItem Header="Nazwa" HorizontalAlignment="Left" Width="189"/>
+                        <TreeViewItem Header="Adres" HorizontalAlignment="Left" Width="189"/>
+                        <TreeViewItem Header="NIP" HorizontalAlignment="Left" Width="189"/>
+                        <TreeViewItem Header="To nie wszysko!!!" HorizontalAlignment="Left" Width="189"/>
                     </TreeViewItem>
-                    <TreeViewItem Header="Podwykonawcy" HorizontalAlignment="Left" Width="108" IsExpanded="True">
-                        <TreeViewItem Header="Podobnie jak w klientach" HorizontalAlignment="Left" Width="89"/>
+                    <TreeViewItem Header="Podwykonawcy" HorizontalAlignment="Left" Width="198" IsExpanded="True">
+                        <TreeViewItem Header="Podobnie jak w klientach" HorizontalAlignment="Left" Width="189"/>
                     </TreeViewItem>
-                    <TreeViewItem Header="Usługi" HorizontalAlignment="Left" Width="108" IsExpanded="True">
+                    <TreeViewItem Header="Usługi" HorizontalAlignment="Left" Width="198" IsExpanded="True">
                         <TreeViewItem Header="Trasy" HorizontalAlignment="Left" Width="89"/>
                     </TreeViewItem>
                 </TreeViewItem>
@@ -45,16 +45,16 @@
                 <TreeViewItem x:Name="TreeAdmin" Header="Admin" PreviewMouseDoubleClick="Click_TreeAdmin" IsEnabled="False" PreviewMouseDown="Click_TreeAdmin"/>
             </TreeView>
         </Grid>
-        <Grid HorizontalAlignment="Stretch" Height="Auto" Margin="140,77,0,0" VerticalAlignment="Stretch" Width="Auto">
-            <WebBrowser x:Name="Mapa" HorizontalAlignment="Stretch" Height="Auto" VerticalAlignment="Stretch" Width="Auto" Margin="0,0,0,0" IsEnabled="False"/>
+        <Grid HorizontalAlignment="Stretch" Height="Auto" Margin="210,77,0,0" VerticalAlignment="Stretch" Width="Auto">
+            <WebBrowser x:Name="Mapa" HorizontalAlignment="Stretch" Height="auto" VerticalAlignment="Stretch" Width="Auto" Margin="0,0,0,0" IsEnabled="False"/>
         </Grid>
-        <Grid x:Name="GridStatus" HorizontalAlignment="Stretch" Height="77" Margin="140,0,0,0" VerticalAlignment="Top" Width="Auto" Background="#FFC4C5DC" IsEnabled="False"/>
-        <Grid x:Name="GridAdmin" HorizontalAlignment="Stretch" Height="77" Margin="140,0,0,0" VerticalAlignment="Top" Width="Auto" Background="#FFC4C5DC" Visibility="Hidden">
+        <Grid x:Name="GridStatus" HorizontalAlignment="Stretch" Height="77" Margin="210,0,0,0" VerticalAlignment="Top" Width="Auto" Background="#FFC4C5DC" IsEnabled="False"/>
+        <Grid x:Name="GridAdmin" HorizontalAlignment="Stretch" Height="77" Margin="210,0,0,0" VerticalAlignment="Top" Width="Auto" Background="#FFC4C5DC" Visibility="Hidden">
             <Button x:Name="AddUser_GridAdmin_button" Content="Dodaj użytkownika" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" Width="124" Click="AddUser_GridAdmin_button_Click"/>
             <Button x:Name="button_GridAdmin_DeleteUser" Content="Usuń użytkownika" HorizontalAlignment="Left" Margin="186,10,0,0" VerticalAlignment="Top" Width="139" Click="button_GridAdmin_DeleteUser_Click"/>
             <TextBlock x:Name="Textblock_GridAdmin_Info" HorizontalAlignment="Left" Margin="683,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="118" FontSize="36"/>
         </Grid>
-        <Grid x:Name="GridAdmin_AddUser" HorizontalAlignment="Stretch" Height="Auto" Margin="140,77,0,0" VerticalAlignment="Stretch" Width="Auto" Background="#FFC4C5DC" Visibility="Hidden">
+        <Grid x:Name="GridAdmin_AddUser" HorizontalAlignment="Stretch" Height="Auto" Margin="210,77,0,0" VerticalAlignment="Stretch" Width="Auto" Background="#FFC4C5DC" Visibility="Hidden">
             <Grid x:Name="GridAddUser_GridAdminAddUser" HorizontalAlignment="Left" Height="345" Margin="30,10,0,0" VerticalAlignment="Top" Width="799" Visibility="Hidden">
                 <Button x:Name="button_AddUserGrid_SaveUser" Content="Zapisz" HorizontalAlignment="Left" Margin="138,248,0,0" VerticalAlignment="Top" Width="115" Height="23" Click="button_AddUserGrid_SaveUser_Click"/>
                 <CheckBox x:Name="CheckBox_AddUser_Map" Content="Mapa" HorizontalAlignment="Left" Margin="138,116,0,0" VerticalAlignment="Top"/>
