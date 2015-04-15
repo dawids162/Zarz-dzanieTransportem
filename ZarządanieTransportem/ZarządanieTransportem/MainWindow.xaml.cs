@@ -33,7 +33,7 @@ namespace ZarządanieTransportem
             if (permissions == "x") this.Close();
             unlock(permissions);
             Mapa.Navigate("https://mapa.targeo.pl");
-          
+            AddToMenu();
             
             
         }
@@ -97,6 +97,23 @@ namespace ZarządanieTransportem
             GridDeleteUser_GridAdminUser.Visibility = Visibility.Hidden;
             //
             Mapa.Visibility = Visibility.Hidden;
+        }
+        private void AddToMenu()
+        {
+            ConnectDataBase.Connect();
+            AddtoMenu2(TreeKierowcy, "select * from Drivers");
+
+        }
+        private void AddtoMenu2(TreeViewItem tree, string commend)
+        {
+            DataTable table = ConnectDataBase.Commend(commend);
+            for(int i = 0;i<table.Rows.Count;i++)
+            {
+                TreeViewItem newtree = new TreeViewItem();
+                newtree.Name = "_"+table.Rows[i]["ID"].ToString()+"_"+table.Rows[i]["Surname"].ToString();
+                newtree.Header = table.Rows[i]["Surname"].ToString() + " " + table.Rows[i]["Name"].ToString();
+                tree.Items.Add(newtree);
+            }
         }
         private void Click_TreeAdmin(object sender, MouseButtonEventArgs e)
         {
