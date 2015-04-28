@@ -8,7 +8,7 @@
             <TreeView HorizontalAlignment="Stretch" Height="Auto" Margin="10,40,10,10" VerticalAlignment="Stretch" Width="Auto" Background="#e0ffff">
                 <TreeViewItem x:Name="TreeMapa" Header="Mapa" PreviewMouseDoubleClick="Click_TreeMap" IsEnabled="False" PreviewMouseDown="Click_TreeMap"/>
                 <TreeViewItem x:Name="TreePracownicy" Header="Pracownicy" IsEnabled="False">
-                    <TreeViewItem x:Name="TreeKierowcy" Header="Kierowcy" HorizontalAlignment="Left" Width="192"/>
+                    <TreeViewItem x:Name="TreeKierowcy" Header="Kierowcy" HorizontalAlignment="Left" Width="192" MouseDoubleClick="TreeKierowcy_MouseDoubleClick"/>
                     <TreeViewItem x:Name="TreeMechanicy" Header="Mechanicy" HorizontalAlignment="Left" Width="192"/>
                     <TreeViewItem x:Name="TreeBiuro" Header="Biuro" HorizontalAlignment="Left" Width="192"/>
                     <TreeViewItem x:Name="TreeBrygadzisci" Header="Brygadziści" HorizontalAlignment="Left" Width="192"/>

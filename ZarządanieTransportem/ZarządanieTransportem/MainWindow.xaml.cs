@@ -27,11 +27,11 @@ namespace ZarządanieTransportem
         {
             InitializeComponent();
             ConnectDataBase.Connect();
-            LoginWindow LoginWindow1 = new LoginWindow(this);
+            LoginWindow loginWindow1 = new LoginWindow(this);
             // Logowanie1.Owner = this;
-            LoginWindow1.ShowDialog();
+            loginWindow1.ShowDialog();
             if (permissions == "x") this.Close();
-            unlock(permissions);
+            Unlock(permissions);
             Mapa.Navigate("https://mapa.targeo.pl");
             //AddToMenu();
             
@@ -42,7 +42,7 @@ namespace ZarządanieTransportem
         /// metoda przyjmuje uprawnienia uzytkownika i odblokowuje w drzewie menu te dla których wartosc jest rowna 1
         /// </summary>
         /// <param name="permissions"></param>
-        private void unlock(string permissions)
+        private void Unlock(string permissions)
         {
             try
             {
@@ -90,7 +90,7 @@ namespace ZarządanieTransportem
         /// metoda do ukrywanie nie potrzebnych obiektów w czasie prechodzenia po menu
         /// po jej wywolaniu powinno ukrywac sie wszystko, za odkrycie odpowiednich obiektow odpowiadaja juz odpowiednie metody Click_Tree
         /// </summary>
-        private void hidden()
+        private void Hidden()
         {
             //zwiazane z adminem
             Textblock_GridAdmin_Info.Text = "";
@@ -121,15 +121,22 @@ namespace ZarządanieTransportem
      
         private void Click_TreeAdmin(object sender, MouseButtonEventArgs e)
         {
-            hidden();
+            Hidden();
             GridAdmin.Visibility = Visibility.Visible;
         }
 
         private void Click_TreeMap(object sender, MouseButtonEventArgs e)
         {
-            hidden();
+            Hidden();
             Mapa.Visibility = Visibility.Visible;
             AddUser_GridAdmin_button.IsEnabled = true;
+        }
+
+        private void TreeKierowcy_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Drivers drivers = new Drivers();
+            drivers.Show();
+            //this.Close();
         }
 
         

@@ -8,15 +8,15 @@ using System.Data;
 
 namespace ZarządanieTransportem
 {
-    static class ConnectDataBase
+    public static class ConnectDataBase
     {
-        static public SQLiteDataAdapter m_oDataAdapter = null;
-        static public DataSet m_oDataSet = null;
-        static public DataTable m_oDataTable = null;
-        static public SQLiteConnection oSQLiteConnection;
-        static public void Connect()
+        public static SQLiteDataAdapter m_oDataAdapter = null;
+        public static DataSet m_oDataSet = null;
+        public static DataTable m_oDataTable = null;
+        public static SQLiteConnection oSQLiteConnection;
+        public static void Connect()
         {
-            oSQLiteConnection = new SQLiteConnection(@"Data Source=E:\GitHub\ZarzadzanieTransportem\bazaDanych.s3db");
+            oSQLiteConnection = new SQLiteConnection(@"Data Source=E:\bazaDanych.s3db");
         }
         static public DataTable Commend(string commend)
         {
