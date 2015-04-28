@@ -66,3 +66,6 @@ E:\Projektowy\ZarzadzanieTransportem\ZarzadzanieTransportem\ZarządanieTransport
 E:\Projektowy\ZarzadzanieTransportem\ZarzadzanieTransportem\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem.csproj.GenerateResource.Cache
 E:\Projektowy\ZarzadzanieTransportem\ZarzadzanieTransportem\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\Drivers.baml
 E:\Projektowy\ZarzadzanieTransportem\ZarzadzanieTransportem\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\Drivers.g.cs
+C:\Users\Damian\Documents\GitHub\ZarzadzanieTransportem\ZarządanieTransportem\ZarządanieTransportem\bin\Debug\ZarządanieTransportem.exe.config
+C:\Users\Damian\Documents\GitHub\ZarzadzanieTransportem\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem.exe
+C:\Users\Damian\Documents\GitHub\ZarzadzanieTransportem\ZarządanieTransportem\ZarządanieTransportem\obj\Debug\ZarządanieTransportem.pdb
