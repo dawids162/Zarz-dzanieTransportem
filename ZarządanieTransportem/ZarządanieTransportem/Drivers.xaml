@@ -16,6 +16,7 @@
         <ComboBox x:Name="Surname_combo" HorizontalAlignment="Left" Margin="369,44,0,0" VerticalAlignment="Top" Width="166"/>
         <Label Content="Dodaj nowego kierowcę:" HorizontalAlignment="Left" Margin="176,18,0,0" VerticalAlignment="Top" Width="163"/>
         <Label Content="Lista kierowców:" HorizontalAlignment="Left" Margin="369,18,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="DeleteDriverButton" Content="Usuń" HorizontalAlignment="Left" Margin="176,236,0,0" VerticalAlignment="Top" Width="140" Height="26" Click="DeleteDriverButton_Click"/>
 
     </Grid>
 </Window>

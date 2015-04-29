@@ -41,9 +41,10 @@ namespace ZarządanieTransportem
                 SQLiteDataReader dataReaderr = createCommand.ExecuteReader();
                 while (dataReaderr.Read())
                 {
+                    string id = dataReaderr.GetInt32(0).ToString();
                     string name = dataReaderr.GetString(1); //1 kolumna
                     string surname = dataReaderr.GetString(2); //2 kolumna
-                    Surname_combo.Items.Add(name+" "+surname);
+                    Surname_combo.Items.Add(id+" "+name+" "+surname);
 
                 }
                 sqliteCon.Close();
@@ -65,7 +66,7 @@ namespace ZarządanieTransportem
                 SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
                 createCommand.ExecuteNonQuery();
 
-                MessageBox.Show("Saved");
+                MessageBox.Show("Kierowca został dodany do bazy.");
                 sqliteCon.Close();
                 this.Hide();
             }
@@ -73,6 +74,27 @@ namespace ZarządanieTransportem
             {                   
                 MessageBox.Show(ex.Message) ;
             }
+        }
+
+        private void DeleteDriverButton_Click(object sender, RoutedEventArgs e)
+        {
+            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
+            try
+            {
+                sqliteCon.Open();
+                string Query = "delete from Drivers where ID='"+this.Id_txt.Text+"'";
+                SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
+                createCommand.ExecuteNonQuery();
+
+                MessageBox.Show("Kierowca został usunięty z bazy.");
+                sqliteCon.Close();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {                   
+                MessageBox.Show(ex.Message) ;
+            }
+
         }
     }
 }
